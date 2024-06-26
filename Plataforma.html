@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Flex money 6 - Dashboard</title>
+    <style>
+        /* Custom CSS */
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Helvetica', sans-serif;
+            padding-bottom: 70px;
+        }
+
+        .titulo-home {
+            color: #875AC0;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .saldo, .saldoR, .saldoD {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .saldoR {
+            color: #73B761;
+        }
+
+        .saldoD {
+            color: #DE0000;
+        }
+
+        .bg-light-custom {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .bi-pie-chart-fill {
+            color: #FFCF4D;
+            font-size: 4rem;
+        }
+
+        .navbar.fixed-bottom {
+            background-color: #fff;
+            border-top: 2px solid #DE0000;
+            padding-top: 10px;
+        }
+
+        .navbar a {
+            color: #DE0000;
+            font-size: 1rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .navbar a:hover {
+            color: #c40000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="titulo-home">Flex money 6</h1>
+    </div>
+
+    <div class="container text-center mb-4">
+        <div class="bg-light-custom mb-3">
+            <p class="fs-5">Saldo Atual</p>
+            <h3>R$ 0,00</h3>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <i class="bi bi-arrow-up-circle" style="color: #73B761; font-size: 2rem;"></i>
+                <p class="saldo">Receita</p>
+                <p class="saldoR">R$ 0,00</p>
+            </div>
+            <div class="col-6">
+                <i class="bi bi-arrow-down-circle" style="color: #DE0000; font-size: 2rem;"></i>
+                <p class="saldo">Despesa</p>
+                <p class="saldoD">R$ 0,00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <p class="text-muted">Despesa por Categoria</p>
+        <div class="bg-light-custom">
+            <div class="row">
+                <div class="col-4">
+                    <i class="bi bi-pie-chart-fill"></i>
+                </div>
+                <div class="col-4 text-start">
+                    <p>Casa <br> Restaurante <br> Eletrônicos <br> Faculdade</p>
+                </div>
+                <div class="col-4 text-end">
+                    <p>R$ 0,00 <br> R$ 0,00 <br> R$ 0,00 <br> R$ 0,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <p class="text-muted">Balanço Mensal</p>
+        <div class="bg-light-custom">
+            <div class="row">
+                <div class="col-6 text-start">Receitas</div>
+                <div class="col-6 text-end" style="color: #73B761;">R$ 0,00</div>
+                <div class="col-6 text-start">Despesas</div>
+                <div class="col-6 text-end" style="color: #DE0000;">R$ 0,00</div>
+                <div class="col-6 text-start">Total</div>
+                <div class="col-6 text-end">R$ 0,00</div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar fixed-bottom">
+        <div class="container d-flex justify-content-around">
+            <a href="dashboard.html"><i class="bi bi-house"><br>Principal</i></a>
+            <a href="despesa.html"><i class="bi bi-plus-circle" style="font-size: 2rem;"></i></a>
+            <a href="#"><i class="bi bi-three-dots"><br>Mais</i></a>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-FvP7qpF39CzRojcM7Rn4eD1x5U0bOsT5glkFrp4x3KNbB8y1wNdV4xM+llRI9GIE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVki6NYENfAdJHr6gY7Ryj9j4ZC2gkzVufCeaGcZVemFY6r36jzA3GvZS5J0Ja8h" crossorigin="anonymous"></script>
+</body>
+</html>
